@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio Gallery</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
+    header { background: #222; color: #fff; text-align: center; padding: 2rem 0; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 2rem; max-width: 1200px; margin: auto; }
+    .item { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s; }
+    .item:hover { transform: translateY(-4px) scale(1.03); }
+    .item img { width: 100%; height: 180px; object-fit: cover; }
+    .item-content { padding: 1rem; }
+    .item-title { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .item-desc { font-size: 0.95rem; color: #555; }
+    footer { background: #222; color: #fff; text-align: center; padding: 1rem 0; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Gallery</h1>
+    <p>Explore my featured projects below!</p>
+  </header>
+  <main>
+    <section class="gallery">
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Project 1">
+        <div class="item-content">
+          <div class="item-title">Project One</div>
+          <div class="item-desc">Description of project one. Technologies used, brief summary, etc.</div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Project 2">
+        <div class="item-content">
+          <div class="item-title">Project Two</div>
+          <div class="item-desc">Description of project two. Technologies used, brief summary, etc.</div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Project 3">
+        <div class="item-content">
+          <div class="item-title">Project Three</div>
+          <div class="item-desc">Description of project three. Technologies used, brief summary, etc.</div>
+        </div>
+      </div>
+      <!-- Add more items as needed -->
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+</body>
+</html>
